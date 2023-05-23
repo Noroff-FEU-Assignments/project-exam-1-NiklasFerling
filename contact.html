@@ -7,21 +7,31 @@
     <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/4c69c38b68.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/contact.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="header">
-        <a href="index.html">Light Weight Blog</a>
-        <nav>
-          <a href="about.html">About</a>
-          <a href="blogs.html">Blogs</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
+      <a href="index.html"
+        ><img src="/assets/Logo.png" alt="Light Weight Blog logo"
+      /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox"
+        ><span class="hidden">Hamburger Menu</span><i class="fas fa-bars"></i
+      ></label>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
     <main>
       <h1>Contact Us</h1>
-      <form action="submit" method="post">
+      <div class="success">Your message is sent!</div>
+      <form onsubmit="" method="get">
         <input
           type="text"
           name="name"
@@ -29,6 +39,9 @@
           placeholder="Full name*"
           required
         />
+        <div class="form-error" id="fullNameError">
+          Name should be more than 5 characters long
+        </div>
         <input
           type="email"
           name="email"
@@ -36,6 +49,9 @@
           placeholder="E-mail*"
           required
         />
+        <div class="form-error" id="emailError">
+          Enter a valid e-mail address
+        </div>
         <input
           type="text"
           name="subject"
@@ -43,14 +59,20 @@
           placeholder="Subject*"
           required
         />
-        <input
+        <div class="form-error" id="subjectError">
+          Subject should be more than 15 characters long
+        </div>
+        <textarea
           type="text"
           name="message"
           id="message"
           placeholder="Message*"
           required
-        />
-        <input type="submit" value="Submit" />
+        ></textarea>
+        <div class="form-error" id="messageError">
+          Message should be more than 25 characters long
+        </div>
+        <input type="submit" value="submit" class="cta" id="submitBTN" />
       </form>
     </main>
     <footer></footer>

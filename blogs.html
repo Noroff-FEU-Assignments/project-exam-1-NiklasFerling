@@ -7,63 +7,32 @@
     <title>Blogs</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/blogs.css" />
+    <script
+      src="https://kit.fontawesome.com/4c69c38b68.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/blogs.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="header">
-        <a href="index.html">Light Weight Blog</a>
-        <nav>
-          <a href="about.html">About</a>
-          <a href="blogs.html">Blogs</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
+      <a href="index.html"
+        ><img src="/assets/Logo.png" alt="Light Weight Blog logo"
+      /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox"
+        ><span class="hidden">Hamburger Menu</span><i class="fas fa-bars"></i
+      ></label>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
     <main>
       <h1>Blog Posts</h1>
-      <div class="posts">
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-        <a href="post.html">
-          <figure><img src="#" alt="#" /></figure>
-          (Post name)
-        </a>
-      </div>
-      <a>View More</a>
+      <div class="posts"></div>
+      <a class="view cta">Load More</a>
+      <p class="unavailable">No more posts available :(</p>
     </main>
     <footer></footer>
   </body>

@@ -1,0 +1,54 @@
+main {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 128px;
+}
+
+main img {
+  aspect-ratio: 4/3;
+}
+
+.posts {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 72px 24px;
+  margin-bottom: 32px;
+}
+
+.card {
+  max-width: 400px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.card p {
+  text-align: left;
+  margin: 8px 0 0;
+}
+
+.cta {
+  margin-top: 32px;
+}
+
+.unavailable {
+  display: none;
+}
+
+a.view {
+  cursor: pointer;
+}
+
+@media (max-width: 930px) {
+  .posts {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+
+  h1 {
+    margin-bottom: 72px;
+  }
+}
