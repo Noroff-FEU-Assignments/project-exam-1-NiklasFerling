@@ -89,6 +89,10 @@ footer {
 
 /* Classes */
 
+.hidden {
+  display: none;
+}
+
 .cta {
   color: #494949;
   font-size: 16px;
