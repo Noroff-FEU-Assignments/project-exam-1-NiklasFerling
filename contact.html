@@ -32,6 +32,7 @@
       <h1>Contact Us</h1>
       <div class="success">Your message is sent!</div>
       <form onsubmit="" method="get">
+        <label for="name" class="hidden">Your Name</label>
         <input
           type="text"
           name="name"
@@ -42,7 +43,7 @@
         <div class="form-error" id="fullNameError">
           Name should be more than 5 characters long
         </div>
-        <label for="#email" class="hidden">Your Email</label>
+        <label for="email" class="hidden">Your Email</label>
         <input
           type="email"
           name="email"
@@ -53,6 +54,7 @@
         <div class="form-error" id="emailError">
           Enter a valid e-mail address
         </div>
+        <label for="subject" class="hidden">Your Subject</label>
         <input
           type="text"
           name="subject"
@@ -63,6 +65,7 @@
         <div class="form-error" id="subjectError">
           Subject should be more than 15 characters long
         </div>
+        <label for="message" class="hidden">Your Message</label>
         <textarea
           type="text"
           name="message"
