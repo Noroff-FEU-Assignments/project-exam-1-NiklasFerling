@@ -9,11 +9,29 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const value = params.get("name");
+
+function successMessage(value) {
+  if (value) {
+    success.style.display = "block";
+  } else {
+    console.log("failed");
+  }
+}
+successMessage(value);
+
 function validateForm(event) {
   event.preventDefault();
+  var one = false;
+  var two = false;
+  var three = false;
+  var four = false;
 
   if (fullName.value.trim().length >= 5) {
     fullNameError.style.display = "none";
+    one = true;
   } else {
     fullNameError.style.display = "block";
     form.onsubmit = event.preventDefault();
@@ -21,6 +39,7 @@ function validateForm(event) {
 
   if (validateEmail(email.value)) {
     emailError.style.display = "none";
+    two = true;
   } else {
     emailError.style.display = "block";
     form.onsubmit = event.preventDefault();
@@ -28,19 +47,22 @@ function validateForm(event) {
 
   if (subject.value.trim().length >= 15) {
     subjectError.style.display = "none";
+    three = true;
   } else {
     subjectError.style.display = "block";
     form.onsubmit = event.preventDefault();
   }
   if (message.value.trim().length >= 25) {
     messageError.style.display = "none";
+    four = true;
   } else {
     messageError.style.display = "block";
     form.onsubmit = event.preventDefault();
   }
-
-  this.submit();
-  success.style.display.block;
+  if (one && two && three && four) {
+    this.submit();
+    success.style.display.block;
+  }
 }
 
 function validateEmail(email) {

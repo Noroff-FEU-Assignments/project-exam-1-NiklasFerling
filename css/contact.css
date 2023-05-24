@@ -48,10 +48,22 @@ textarea {
 
 .success {
   display: none;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  padding: 32px 0;
+  background-color: rgb(188, 236, 188);
+  border: rgb(93, 170, 93) solid 2px;
+}
+
+.success p {
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
 }
 
 @media (max-width: 740px) {
-  form {
+  form,
+  .success {
     max-width: 80%;
   }
 }
