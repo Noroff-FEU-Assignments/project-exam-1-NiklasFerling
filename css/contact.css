@@ -40,6 +40,10 @@ textarea {
   -webkit-appearance: none;
 }
 
+input:last-of-type {
+  background-color: #ebebeb;
+}
+
 /* classes */
 
 .form-error {
