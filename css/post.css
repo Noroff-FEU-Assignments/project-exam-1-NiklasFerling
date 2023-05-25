@@ -32,8 +32,12 @@ h1 {
   font-weight: 600;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 960px) {
   .content p {
     max-width: 80%;
+  }
+
+  h1 {
+    max-width: 90%;
   }
 }

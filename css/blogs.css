@@ -42,7 +42,7 @@ a.view {
   cursor: pointer;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 960px) {
   .posts {
     grid-template-columns: 1fr 1fr;
     max-width: 90%;
