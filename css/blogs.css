@@ -51,4 +51,8 @@ a.view {
   h1 {
     margin-bottom: 72px;
   }
+
+  main img {
+    aspect-ratio: 3/4;
+  }
 }

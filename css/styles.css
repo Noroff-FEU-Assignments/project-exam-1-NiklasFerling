@@ -39,7 +39,8 @@ header div {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   justify-content: space-between;
-  margin: 0 80px;
+  max-width: 90%;
+  margin: auto;
   align-items: center;
 }
 
