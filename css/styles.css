@@ -29,6 +29,10 @@ a {
   color: #000;
 }
 
+button {
+  background-color: #e0e0e0;
+}
+
 header {
   background-color: #dedede;
   padding: 16px 0;
@@ -145,5 +149,9 @@ footer i {
 
   header #menu-checkbox:checked ~ nav {
     display: grid;
+  }
+
+  footer div {
+    width: 90%;
   }
 }

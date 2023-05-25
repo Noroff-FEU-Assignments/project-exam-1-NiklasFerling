@@ -26,6 +26,8 @@ textarea {
   padding: 16px;
   border-radius: 8px;
   border: 2px solid #494949;
+  resize: none;
+  border-radius: 0;
 }
 
 input,
@@ -35,7 +37,6 @@ textarea {
   border-color: #494949;
   border-style: solid;
   font-size: 20px;
-  border-radius: 0;
 }
 
 /* classes */
