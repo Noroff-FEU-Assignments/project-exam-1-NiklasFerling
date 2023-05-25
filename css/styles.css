@@ -82,9 +82,23 @@ img {
 }
 
 footer {
+  display: flex;
   background-color: #313131;
   height: 160px;
   margin-top: 72px;
+  align-items: center;
+}
+
+footer div {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+}
+
+footer i {
+  font-size: 48px;
 }
 
 /* Classes */
