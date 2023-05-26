@@ -84,6 +84,15 @@ img {
   width: 100%;
   object-fit: cover;
   object-position: top;
+  vertical-align: bottom;
+}
+
+.card img:hover {
+  transform: scale(1.3);
+}
+
+.card img {
+  transition: transform 0.2s;
 }
 
 footer {
@@ -108,8 +117,16 @@ footer i {
 
 /* Classes */
 
+.active {
+  font-weight: 600;
+}
+
 .hidden {
   display: none;
+}
+
+.img {
+  overflow: hidden;
 }
 
 .cta {
@@ -122,6 +139,34 @@ footer i {
   border-color: #494949;
   border-style: solid;
   border-width: 2px;
+}
+
+.cta:hover {
+  color: #fff;
+  background-color: #494949;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #313131; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 48px;
+}
+
+.loader-container {
+  display: flex;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 960px) {

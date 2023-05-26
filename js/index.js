@@ -12,7 +12,7 @@ async function getBlogs(url) {
 
   posts.forEach(function (posts) {
     container.innerHTML += `
-      <a href="post.html?id=${posts.id}" class="slide">
+      <a href="post.html?id=${posts.id}" class="slide card">
         <div class="img"><img src="${posts.better_featured_image.source_url}" alt="${posts.better_featured_image.alt_text}"></div>
         <p>${posts.title.rendered}</p>
       </a>`;

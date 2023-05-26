@@ -13,3 +13,9 @@ p {
 p:first-of-type {
   font-weight: 600;
 }
+
+@media (max-width: 960px) {
+  p {
+    width: 80%;
+  }
+}
